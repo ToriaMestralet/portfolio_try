@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Nohemi";
+    src: url("font/OpenType-TT/Nohemi-Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Nohemi";
+    src: url("font/OpenType-TT/Nohemi-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nohemi";
+    src: url("font/OpenType-TT/Nohemi-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+/* oxygen thin y reg*/
+@font-face {
+    font-family: "Oxygen";
+    src: url("font/Oxygen-Light.ttf") format("ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Oxygen";
+    src: url("font/Oxygen-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Oxygen";
+    src: url("font/Oxygen-Bold.ttf") format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEEE8;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Nohemi";
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    /*padding-top: 20vh;*/
+}
+
+h2 {
+    font-family: "Nohemi";
+    font-weight: 600;
+    font-size: 28px;
+    /*padding-top: 50px;*/
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Nohemi";
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: "Oxygen";
+    font-weight: 200;
+}
+
+h5 {
+    font-size: 22px;
+    font-family: "Nohemi";
+    font-weight: 400;
+    color: #B7460C;
+}
+h6{
+    font-size: 18px;
+    font-family: "Nohemi";
+    font-weight: 400;
+    opacity: 40%;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Oxygen";
+    font-weight: 400;
+}
+
+a {
+    font-size: 22px;
+    font-family: "Nohemi";
+    font-weight: 400;
+    color: #B7460C;
+    text-decoration: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 5px;
+}
+
+header{
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    color: #EFFFF9;
+    display: flex;
+    align-items: center;
+}
+section#perfil-thumbnails{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.perfil{
+    background-color: #FCF9F2;
+    border-radius: 15px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.perfil img{
+    width: 175px;
+    border-radius: 360px;
+    margin-bottom: 50px;
+}
+.perfil h2{
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
+.perfil p{
+    margin: 0 20px;
+    margin-bottom: 60px;
+    width: 230px;
+    padding: 0 10px;
+}
+.perfil h4{
+    opacity: 70%;
+    text-align: center;
+}
+.perfil h5{
+    margin-top: 60px;
+    text-align: center;
+}
+.contenedor-derecha h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/* nuevo*/
+.contenedor-trabajos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagen-wrap{
+    position: relative;
+    flex: 1 0 33%;
+    margin: 10px;
+}
+.imagen-wrap img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+.nombre-imagen{
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EFEEE8;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+.imagen-wrap:hover img{
+    filter: brightness(30%);
+}
+.imagen-wrap:hover .nombre-imagen{
+    opacity: 1;
+}
+section#about{
+    background-color: #E1A984;
+    height: 650px;
+}
+.contenedor-about{
+    width: 80%;
+    margin: 50px auto;
+}
+.contenedor-about h2{
+    padding-top: 70px;
+}
+.contenedor-about p{
+    padding-bottom: 20px;
+}
+
+.separador {
+    border-top: 3px solid #B7460C;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: 0;
+}
+
+
+footer {
+    height: 20vh;
+    background-color: #EFEEE8;
+    color: #251E23;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+footer h6 {
+    padding-top: 10px;
+    margin: 5px;
+}
+
+section#caja-principal {
+    width: 80%;
+    margin: 50px auto;
+}
+.barrita-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.nombrecito{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.icon img{
+    width: 60px;
+    border-radius: 50px;
+}
+.datos{
+    margin-left: 10px;
+}
+
+.descripcion{
+    margin-bottom: 40px;
+}
+.caja-imagenes img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+section#ver-mas{
+    width: 80%;
+    margin: 50px auto;
+}
+.contenedor-vermas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.contenedor-vermas h2{
+    font-size: 22px;
+}
+.trabajos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.trabajos img{
+    width:350px;
+}
+
